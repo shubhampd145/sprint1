@@ -1,7 +1,6 @@
-# 📄 DNS Documentation 
+#  DNS Documentation 
 
----
-# 📄 DNS Documentation (Detailed Version)
+
 
 ## Table of Contents
 - [1. Introduction](#introduction)
