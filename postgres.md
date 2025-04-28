@@ -122,7 +122,7 @@ To exit the `psql` prompt:
 Open the PostgreSQL Host-Based Authentication configuration file:
 
 ```bash
-sudo nano /etc/postgresql/12/main/pg_hba.conf
+sudo nano /etc/postgresql/17/main/pg_hba.conf
 ```
 
 ---
