@@ -30,3 +30,87 @@ sudo apt install postgresql
 ```bash
 psql --version
 ```
+# PostgreSQL User, Database, and Table Setup
+
+## 1. Add a New User
+First, log in to PostgreSQL as the `postgres` user:
+
+```bash
+sudo -u postgres psql
+```
+
+Inside the `psql` shell, create a new user:
+
+```sql
+CREATE USER myuser WITH ENCRYPTED PASSWORD 'mypassword';
+```
+> This creates a new user called `myuser` with the password `mypassword`.
+
+---
+
+## 2. Create a Database
+Still in the `psql` shell, create a database:
+
+```sql
+CREATE DATABASE mydb;
+```
+
+---
+
+## 3. Grant Permissions to the User on the Database
+Grant the new user (`myuser`) all privileges on the newly created database (`mydb`):
+
+```sql
+GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
+ALTER USER myuser WITH SUPERUSER;
+```
+
+---
+
+## 4. Create a Table in the Database
+Now, connect to the `mydb` database:
+
+```sql
+\c mydb
+```
+
+After connecting, create a table:
+
+```sql
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    position VARCHAR(100),
+    salary NUMERIC
+);
+```
+
+---
+
+## 5. Insert Data into the Table
+Insert some sample data into the `employees` table:
+
+```sql
+INSERT INTO employees (name, position, salary) 
+VALUES 
+    ('Alice', 'Engineer', 60000),
+    ('Bob', 'Manager', 80000);
+```
+
+---
+
+## 6. View the Data
+You can view the data inserted into the table with the following query:
+
+```sql
+SELECT * FROM employees;
+```
+
+---
+
+## 7. Exit `psql`
+To exit the `psql` prompt:
+
+```sql
+\q
+```
