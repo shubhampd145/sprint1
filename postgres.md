@@ -25,7 +25,7 @@ sudo apt install postgresql
 
 ---
 
-# Step 3: Check PostgreSQL Version from Command Line
+### Step 5: Check PostgreSQL Version from Command Line
 
 ```bash
 psql --version
