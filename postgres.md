@@ -126,20 +126,11 @@ sudo nano /etc/postgresql/12/main/pg_hba.conf
 
 ---
 
-## 2. Change Authentication Method
-Find the line that looks like:
+## 2. Add Authentication Method
 
-```plaintext
-local   all             postgres                                peer
 ```
-
-Change it to use `md5` instead of `peer`:
-
-```plaintext
-local   all             postgres                                md5
-local   all             shubham                                 md5
+local   all             myuser                                md5
 ```
-> This allows password-based authentication for both the `postgres` and `shubham` users.
 
 ---
 
