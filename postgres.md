@@ -1,4 +1,27 @@
 # POC For PostgreSql Installation and Setup 
+
+## Table of Contents
+- [Steps for PostgreSQL Installation](#steps-for-postgresql-installation)
+  - [Step 1: Import the PostgreSQL Signing Key](#step1--import-the-postgresql-signing-key)
+  - [Step 2: Add the PostgreSQL APT Repository](#step-2-add-the-postgresql-apt-repository)
+  - [Step 3: Update the Package Lists](#step-3-update-the-package-lists)
+  - [Step 4: Install the Latest Version of PostgreSQL](#step-4-install-the-latest-version-of-postgresql)
+  - [Step 5: Check PostgreSQL Version from Command Line](#step-5-check-postgresql-version-from-command-line)
+- [PostgreSQL User, Database, and Table Setup](#postgresql-user-database-and-table-setup)
+  - [1. Add a New User](#1-add-a-new-user)
+  - [2. Create a Database](#2-create-a-database)
+  - [3. Grant Permissions to the User on the Database](#3-grant-permissions-to-the-user-on-the-database)
+  - [4. Create a Table in the Database](#4-create-a-table-in-the-database)
+  - [5. Insert Data into the Table](#5-insert-data-into-the-table)
+  - [6. View the Data](#6-view-the-data)
+  - [7. Exit `psql`](#7-exit-psql)
+- [PostgreSQL Configuration: Enable Password Authentication for Users](#postgresql-configuration-enable-password-authentication-for-users)
+  - [1. Edit `pg_hba.conf` File](#1-edit-pg_hbaconf-file)
+  - [2. Add Authentication Method](#2-add-authentication-method)
+  - [3. Restart PostgreSQL Service](#3-restart-postgresql-service)
+  - [4. Connect to Database as the New User (Optional)](#4-connect-to-database-as-the-new-user-optional)
+
+---
 ##  Steps for PostgreSQL Installation 
 ### step1 : Import the PostgreSQL signing key
 ```bash
