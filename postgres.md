@@ -114,3 +114,51 @@ To exit the `psql` prompt:
 ```sql
 \q
 ```
+
+# PostgreSQL Configuration: Enable Password Authentication for Users
+
+## 1. Edit `pg_hba.conf` File
+Open the PostgreSQL Host-Based Authentication configuration file:
+
+```bash
+sudo nano /etc/postgresql/12/main/pg_hba.conf
+```
+
+---
+
+## 2. Change Authentication Method
+Find the line that looks like:
+
+```plaintext
+local   all             postgres                                peer
+```
+
+Change it to use `md5` instead of `peer`:
+
+```plaintext
+local   all             postgres                                md5
+local   all             shubham                                 md5
+```
+> This allows password-based authentication for both the `postgres` and `shubham` users.
+
+---
+
+## 3. Restart PostgreSQL Service
+After saving changes to `pg_hba.conf`, restart the PostgreSQL service to apply the changes:
+
+```bash
+sudo systemctl restart postgresql
+```
+
+---
+
+## 4. Connect to Database as the New User (Optional)
+Now, you can connect to the database as `myuser`:
+
+```bash
+psql -U myuser -d mydb -W
+```
+- `-U myuser`: Connect as the `myuser`.
+- `-d mydb`: Connect to the `mydb` database.
+- `-W`: Force `psql` to prompt for the password.
+
