@@ -197,5 +197,5 @@ psql -U myuser -d mydb -W
 ##  References
 | Links | Descriptions |
 |-------|--------------|
-| [DigitalOcean Tutorial](https://phoenixnap.com/kb/sysctl) | sysctl into and commands  |
+| [DigitalOcean Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-20-04) | Postgresql   i  nstallation step by step|
 
