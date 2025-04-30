@@ -1,5 +1,13 @@
 # POC For PostgreSql Installation and Setup 
 
+
+| Author  | Created on | Version   | Last Edited On | Comment  | Reviewer |
+|---------|------------|-----------|----------------|-------------------|---------------|
+| Shubham | 29-04-25   |  v1| 29-04-25        | Internal Review    | Komal Jaiswal|
+| Shubham | 29-04-25   | v1 | 29-04-25        | L0 Review    | Gaurav Singla|
+| Shubham | 29-04-25   | v1 | 29-04-25        | L1 Review    | Rahul Gupta |
+| Shubham | 29-04-25   | v1  |29-04-25        | L2 Review    | Mahesh Kumar |
+
 ## Table of Contents
 - [Steps for PostgreSQL Installation](#steps-for-postgresql-installation)
   - [Step 1: Import the PostgreSQL Signing Key](#step1--import-the-postgresql-signing-key)
@@ -20,6 +28,9 @@
   - [2. Add Authentication Method](#2-add-authentication-method)
   - [3. Restart PostgreSQL Service](#3-restart-postgresql-service)
   - [4. Connect to Database as the New User (Optional)](#4-connect-to-database-as-the-new-user-optional)
+ 
+- [Contacts](#Contacts)
+- [References](#References)
 
 ---
 ##  Steps for PostgreSQL Installation 
@@ -176,4 +187,15 @@ psql -U myuser -d mydb -W
 - `-U myuser`: Connect as the `myuser`.
 - `-d mydb`: Connect to the `mydb` database.
 - `-W`: Force `psql` to prompt for the password.
+
+
+##  Contacts
+| Name | Email Address |
+|------|---------------|
+| Shubham Prasad | [shubham.prasad.snaatak@mygurukulam.co](mailto:shubham.prasad.snaatak@mygurukulam.co) |
+
+##  References
+| Links | Descriptions |
+|-------|--------------|
+| [DigitalOcean Tutorial](https://phoenixnap.com/kb/sysctl) | sysctl into and commands  |
 
