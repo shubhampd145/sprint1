@@ -23,3 +23,15 @@ The Attendance REST API is a Python-based microservice designed to handle all at
 | **Instance Type**   | t2.small 
 
 ## Pre-requisites
+| Dependencies | Details|
+|--------------|--------|
+| **PostgreSql** |  |
+| **Redis**   |  |
+| **Poetry**   |  |
+| **Liquibase**   |  |
+| **Make**   |  |
+
+## Architecture 
+
+![image](https://github.com/user-attachments/assets/00ef17c0-ae63-4a65-8646-d98989d65b44)
+
