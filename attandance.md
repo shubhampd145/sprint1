@@ -35,3 +35,7 @@ The Attendance REST API is a Python-based microservice designed to handle all at
 
 ![image](https://github.com/user-attachments/assets/00ef17c0-ae63-4a65-8646-d98989d65b44)
 
+## POC For Setup Attandance Api 
+[Click here for Setup and run the App for POC](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Shrey-SCRUM-70/ot_ms_understanding/application/attendance/setup.md)
+
+
