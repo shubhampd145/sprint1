@@ -3,9 +3,7 @@
 | Author  | Created on | Version   | Last Edited On | Comment  | Reviewer |
 |---------|------------|-----------|----------------|-------------------|---------------|
 | Shubham | 01-05-25   |  v1    | 01-05-25       | Internal Review     | Komal Jaiswal|
-| Shubham |  01-05-25  | v1     | 01-05-25       | L0 Review           | Gaurav Singla|
-| Shubham | 01-05-25   | v1     |  01-05-25      | L1 Review           | Rahul Gupta |
-| Shubham | 01-05-25   | v1     |  01-05-25      | L2 Review           | Mahesh Kumar |
+
 
 ## Introduction 
 Attendance REST API is a python based microservice which is responsible for all the attendance related transactions in the OT-Microservices. 
@@ -16,20 +14,41 @@ The Attendance REST API is a Python-based microservice designed to handle all at
 ## System Requirements
 | System Requirement | Minimum Requirement |
 |--------------------|----------------------|
-| **OS**              | Ubuntu or other Linux-based OS |
+| **OS**              | Ubuntu  |
 | **Disk space**      | 20 GB |
 | **RAM**             | 4 GB |
 | **Processor**       | Dual-core recommended |
 | **Instance Type**   | t2.small 
 
 ## Pre-requisites
-| Dependencies | Details|
-|--------------|--------|
-| **PostgreSql** |  |
-| **Redis**   |  |
-| **Poetry**   |  |
-| **Liquibase**   |  |
-| **Make**   |  |
+## Build Time Dependencies
+
+| Name            | Description     |
+|--------------|-----------------|
+| Poetry  |   |
+|Make | |
+|Liquibase | |
+|Gunicorn|  |
+
+## Run Time Dependencies
+
+| Name           | Description     |
+|---------------|-----------------|
+| PostgreSql   |  |
+| Redis  |   |
+| Swagger|  | 
+ 
+
+
+## Important Ports
+
+| Inbound Traffic | Description       |
+|------------------|-------------------|
+|    6379      | redis |
+|    5732     |  postgres |
+|    8080      |   gunicorn |
+|   22    |  SSh|
+  |80         | network external|
 
 ## Architecture 
 
@@ -38,4 +57,13 @@ The Attendance REST API is a Python-based microservice designed to handle all at
 ## POC For Setup Attandance Api 
 [Click here for Setup and run the App for POC](https://github.com/Cloud-NInja-snaatak/Documentation/blob/Shrey-SCRUM-70/ot_ms_understanding/application/attendance/setup.md)
 
+## Components 
+
+### PostgreSQL
+### Redis
+### Poetry 
+### Liquibase
+### Gunicorn 
+## Contacts 
+## References  
 
